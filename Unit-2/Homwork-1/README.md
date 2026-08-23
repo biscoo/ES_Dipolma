@@ -1,4 +1,4 @@
-# Unit-2 Assignment
+# Unit-2 Assignment 1
 
 A small C program with a menu. You type a number and it runs one of the exercises,
 then goes back to the menu. Type 8 to quit.
