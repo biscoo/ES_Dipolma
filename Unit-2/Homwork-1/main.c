@@ -9,27 +9,31 @@ void main() {
 	int x = 0;
 	int y = 0;
 	char c = 1;
-	repeat: x = 0;
+	x = 0;
 	y = 0;
-	printf("Enter exercise number (1-6) to see the output or 8 to exit: ");
-	fflush(stdin);
-	fflush(stdout);
-	scanf("%d", &x);
+
 	while (c) {
+		x = 0;
+		y = 0;
+		printf("Enter exercise number (1-6) to see the output or 8 to exit: ");
+		fflush(stdin);
+		fflush(stdout);
+		scanf("%d", &x);
 		switch (x) {
 		case 1: {
 			printf("###########################\nC Programming\n"
 					"###########################\n");
 			fflush(stdin);
 			fflush(stdout);
-			goto repeat;
+			break;
+
 		}
 		case 2: {
 			printf("Enter a integer: ");
 			fflush(stdin), fflush(stdout);
 			scanf("%d", &y);
 			printf("You entered: %d\n", y);
-			goto repeat;
+			break;
 		}
 		case 3: {
 			printf("Enter integer 1: ");
@@ -39,7 +43,7 @@ void main() {
 			fflush(stdin), fflush(stdout);
 			scanf("%d", &y);
 			printf("SUM = %d\n", x + y);
-			goto repeat;
+			break;
 		}
 		case 4: {
 			float (x);
@@ -51,7 +55,7 @@ void main() {
 			fflush(stdin), fflush(stdout);
 			scanf("%f", &y);
 			printf("MUL = %f\n", x * y);
-			goto repeat;
+			break;
 		}
 		case 5: {
 			char (x);
@@ -59,7 +63,7 @@ void main() {
 			fflush(stdin), fflush(stdout);
 			scanf("%c", &x);
 			printf("ASCII value of %c = %d\n", x, x);
-			goto repeat;
+			break;
 
 		}
 		case 6: {
@@ -74,11 +78,15 @@ void main() {
 			x = x - y;
 			printf("After swapping, value of a = %d\n", x);
 			printf("After swapping, value of b = %d\n", y);
-			goto repeat;
+			break;
 		}
 
-		case 8:
+		case 8: {
 			c = 0;
+			break;
+		}
+		default:
+			printf("Invalid choice, please try again.\n");
 		}
 
 	}
