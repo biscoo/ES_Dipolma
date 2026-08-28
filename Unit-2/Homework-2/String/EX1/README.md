@@ -17,7 +17,7 @@ reversed.
 ## Example
 
 ```
-String Char Frequency Search (Linear)
+String Analyzer (Linear Search)
 #####################################
 Enter a String: programming
 Enter a char to be found: g
