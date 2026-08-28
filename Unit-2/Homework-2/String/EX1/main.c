@@ -12,8 +12,8 @@ void main() {
 	int i, n = 0, str_length = 0;
 	char c;
 	char text[100], rev[100];
-	printf("String Char Frequency Search (Linear)\n"
-			"#####################################\n");
+	printf("String Analyzer (Linear)\n"
+			"###############\n");
 	printf("Enter a String: ");
 	fflush(stdin);
 	fflush(stdout);
